@@ -1,4 +1,4 @@
-#Soy Juanjo Hernández web site 🎨
+# Soy Juanjo Hernández web site 🎨
 
 _Este es un sitio web diseñado para transmitir la escencia de lo que es Soy Juanjo Hernández._
 
