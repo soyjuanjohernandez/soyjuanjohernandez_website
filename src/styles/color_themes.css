@@ -1,0 +1,12 @@
+html {
+    --color-primary:#3F3F3F;
+    --color-secondary:#FFFFFF;
+    --color-primary-alt:#545454;
+    
+}
+
+html[data-theme=light] {
+    --primary:#FFFFFF;
+    --color-secondary:#3F3F3F;
+    --color-primary-alt:#EFEFEF
+  }

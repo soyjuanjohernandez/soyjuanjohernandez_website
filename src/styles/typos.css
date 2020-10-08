@@ -1,0 +1,15 @@
+:root{
+  /* size */
+--font-small: .8rem;
+--font-paragraph: 14px;
+--font-paragraphLarge: 1.3rem;
+--font-h3: 1.25rem;
+--font-h2: 1.5rem;
+--font-h1: 2rem;
+
+/* Bold */
+--regular: 400;
+--medium: 500;
+--bold: 700;
+--black: 900;
+}
