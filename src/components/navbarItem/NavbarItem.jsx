@@ -5,15 +5,15 @@ import "./NavbarItem.css";
 
 const NavbarItem = (props) => {
 
-  const {itemImage} = props;
+  const {itemImage, title} = props;
 
   return (
     <div
       className="navbar-item">
         <img
           src={itemImage || null}
-          alt={itemImage || null}
-          title={itemImage || null}
+          alt={title || null}
+          title={title || null}
           className="navbar-item__image"
         />
     </div>
