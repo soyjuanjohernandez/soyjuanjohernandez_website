@@ -1,0 +1,26 @@
+.navbar-item {
+  width: 173px;
+  height: 50px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.navbar-item img {
+  transform: translate(0px);
+  transition: transform 0.06s;
+}
+.navbar-item:hover img {
+  cursor: pointer;
+  position: relative;
+  transform: translate(-180px);
+  transition: transform 0.06s;
+  /* animation: intro .5s; */
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
