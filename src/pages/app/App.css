@@ -6,8 +6,7 @@
   background-color: var(--color-primary);
 }
 
-.App section{
-  height:100vh;
-  margin-bottom:20px;
+/* .App section{
+  height:calc(100vh - 60px);
   padding-top: 1px;
-}
+} */
