@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: var(--color-primary-alt);
+  box-shadow: var(--box-shadow);
+}
+
+.navbar__logo {
+  cursor: pointer;
+  display: flex;
+  margin-left: 20px;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.navbar__item {
+  transition: all 0.1s;
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar__item:active {
+  transform: scale(0.92);
+}
