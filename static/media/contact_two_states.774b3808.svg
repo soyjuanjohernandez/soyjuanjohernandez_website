@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="353" height="50" viewBox="0 0 353 50">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-contact_two_statesm);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 20px;
+        font-family: Nunito-Bold, Nunito;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3dae2b"/>
+      <stop offset="0.258" stop-color="#3db42b"/>
+      <stop offset="0.607" stop-color="#3dc52b"/>
+      <stop offset="1" stop-color="#3de12b"/>
+    </linearGradient>
+    <clipPath id="clip-contact_two_statesm">
+      <rect width="353" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="contact_two_statesm" class="cls-1">
+    <g id="Grupo_250" data-name="Grupo 250" transform="translate(-5547 -1229)">
+      <g id="Grupo_246" data-name="Grupo 246" transform="translate(4648 1292)">
+        <text id="_.Contáctame__" data-name=".Contáctame { _" class="cls-2" transform="translate(1223 -31)"><tspan x="-143.72" y="0">.Contáctame { _</tspan></text>
+        <path id="Trazado_172" data-name="Trazado 172" class="cls-3" d="M260.408,171.8a2.622,2.622,0,0,1-2.619-2.619v-5.031a2.619,2.619,0,0,1,5.238,0v2.412H375.421V128.694H264.49a2.619,2.619,0,1,1,0-5.238H378.04a2.622,2.622,0,0,1,2.618,2.619v43.1a2.622,2.622,0,0,1-2.618,2.619Z" transform="translate(871.336 -185.456)"/>
+      </g>
+      <text id="Contáctame_" data-name="Contáctame " class="cls-2" transform="translate(5699 1261)"><tspan x="-116.24" y="0">Contáctame </tspan></text>
+    </g>
+  </g>
+</svg>

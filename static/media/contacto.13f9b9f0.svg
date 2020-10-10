@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172.994" height="48.342" viewBox="0 0 172.994 48.342">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3dae2b"/>
+      <stop offset="0.258" stop-color="#3db42b"/>
+      <stop offset="0.607" stop-color="#3dc52b"/>
+      <stop offset="1" stop-color="#3de12b"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_243" data-name="Grupo 243" transform="translate(-1079 62)">
+    <text id="_.Contáctame__" data-name=".Contáctame { _" transform="translate(1223 -31)" fill="#fff" font-size="20" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="-143.72" y="0">.Contáctame { _</tspan></text>
+    <path id="Trazado_172" data-name="Trazado 172" d="M260.408,171.8a2.622,2.622,0,0,1-2.619-2.619v-5.031a2.619,2.619,0,0,1,5.238,0v2.412H375.421V128.694H264.49a2.619,2.619,0,1,1,0-5.238H378.04a2.622,2.622,0,0,1,2.618,2.619v43.1a2.622,2.622,0,0,1-2.618,2.619Z" transform="translate(871.336 -185.456)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
