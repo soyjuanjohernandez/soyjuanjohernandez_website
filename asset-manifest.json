@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/soyjuanjohernandez_website/static/css/main.70ab7c06.chunk.css",
+    "main.css": "/soyjuanjohernandez_website/static/css/main.ce5e7c6c.chunk.css",
     "main.js": "/soyjuanjohernandez_website/static/js/main.c398eb2e.chunk.js",
     "main.js.map": "/soyjuanjohernandez_website/static/js/main.c398eb2e.chunk.js.map",
     "runtime-main.js": "/soyjuanjohernandez_website/static/js/runtime-main.c8c58e59.js",
@@ -8,9 +8,9 @@
     "static/js/2.feee0054.chunk.js": "/soyjuanjohernandez_website/static/js/2.feee0054.chunk.js",
     "static/js/2.feee0054.chunk.js.map": "/soyjuanjohernandez_website/static/js/2.feee0054.chunk.js.map",
     "index.html": "/soyjuanjohernandez_website/index.html",
-    "precache-manifest.78e9aaa51f1c92fe182c15180053094b.js": "/soyjuanjohernandez_website/precache-manifest.78e9aaa51f1c92fe182c15180053094b.js",
+    "precache-manifest.ce79695a64726fdd57853751a2e4e2b7.js": "/soyjuanjohernandez_website/precache-manifest.ce79695a64726fdd57853751a2e4e2b7.js",
     "service-worker.js": "/soyjuanjohernandez_website/service-worker.js",
-    "static/css/main.70ab7c06.chunk.css.map": "/soyjuanjohernandez_website/static/css/main.70ab7c06.chunk.css.map",
+    "static/css/main.ce5e7c6c.chunk.css.map": "/soyjuanjohernandez_website/static/css/main.ce5e7c6c.chunk.css.map",
     "static/js/2.feee0054.chunk.js.LICENSE.txt": "/soyjuanjohernandez_website/static/js/2.feee0054.chunk.js.LICENSE.txt",
     "static/media/about_two_states.svg": "/soyjuanjohernandez_website/static/media/about_two_states.0b0f1929.svg",
     "static/media/banner.css": "/soyjuanjohernandez_website/static/media/background_banner_dark_theme.803efac1.png",
@@ -44,7 +44,7 @@
   "entrypoints": [
     "static/js/runtime-main.c8c58e59.js",
     "static/js/2.feee0054.chunk.js",
-    "static/css/main.70ab7c06.chunk.css",
+    "static/css/main.ce5e7c6c.chunk.css",
     "static/js/main.c398eb2e.chunk.js"
   ]
 }
