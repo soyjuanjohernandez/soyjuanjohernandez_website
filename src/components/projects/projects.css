@@ -1,0 +1,26 @@
+.projects {
+  background-color: var(--color-primary-alt);
+  display: grid;
+  grid-gap: 0px 0px;
+  gap: 0px 0px;
+  color: var(--color-secondary);
+  padding: 30px 70px;
+}
+
+.projects__title {
+  justify-self: start;
+  margin: 44px 0;
+}
+
+.projects__cards {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  justify-content: center;
+}
+
+@media (min-width: 1068px) {
+  .projects__cards {
+    grid-template-columns: repeat(3, 331px);
+  }
+}

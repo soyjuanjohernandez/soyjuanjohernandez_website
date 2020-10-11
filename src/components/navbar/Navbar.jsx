@@ -37,14 +37,18 @@ const Navbar = (props) => {
           <NavbarItem itemImage={images.projects_two} title="Proyectos" />
         </NavLink>
 
-        <NavLink to="#blog" smooth className="navbar__item" title="Blog">
+        <NavLink to="#" smooth className="navbar__item" title="Blog">
           <NavbarItem itemImage={images.blog_two} title="Blog" />
         </NavLink>
 
-        <NavLink to="#blog" smooth className="navbar__item" title="Contáctame">
+        <NavLink
+          to="#contact"
+          smooth
+          className="navbar__item"
+          title="Contáctame"
+        >
           <NavbarItem itemImage={images.contact_two} title="Contáctame" />
         </NavLink>
-        
       </div>
     </nav>
   );
