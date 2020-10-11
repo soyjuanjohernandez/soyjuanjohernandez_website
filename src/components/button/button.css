@@ -1,0 +1,37 @@
+.button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    color: var(--color-secondary);
+    text-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+    background-image: linear-gradient(to right, #2b2b2b ,  #727272);
+    transition: all .06s;
+    outline-color: #727272;
+}
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.button:active{
+  transform: scale(1);
+}
+
+.button.button--html {
+background-image: linear-gradient(to right, #E44D26 , #FF8D00);
+outline-color:  #FF8D00;
+
+
+}
+
+.button.button--css {
+background-image: linear-gradient(to right, #264DE4 ,  #26BAE3);
+}
+
+.button.button--js {
+background-image: linear-gradient(to right, #FFC800 ,  #FFFF35);
+}
+
+.button.button--node {
+background-image: linear-gradient(to right, #3DAE2B ,  #3DE12B);
+}
