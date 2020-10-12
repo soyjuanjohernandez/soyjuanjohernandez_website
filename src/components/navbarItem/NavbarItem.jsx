@@ -5,7 +5,7 @@ import "./NavbarItem.css";
 
 const NavbarItem = (props) => {
 
-  const {itemImage, title} = props;
+  const {itemImage, title, classNameImage} = props;
 
   return (
     <div
@@ -14,7 +14,7 @@ const NavbarItem = (props) => {
           src={itemImage || null}
           alt={title || null}
           title={title || null}
-          className="navbar-item__image"
+          className={`navbar-item__image ${classNameImage || null}`}
         />
     </div>
   );

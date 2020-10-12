@@ -1,9 +1,10 @@
-html {
+html[data-theme=dark] {
     --color-primary:#3F3F3F;
     --color-secondary:#FFFFFF;
     --color-primary-alt:#545454;
     
 }
+
 
 html[data-theme=light] {
     --primary:#FFFFFF;
