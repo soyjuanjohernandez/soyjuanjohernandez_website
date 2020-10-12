@@ -15,6 +15,13 @@ const About = (props) => {
           className="about__title-image"
         />
       </div>
+      <div className="about__face-image">
+        <img
+          src={images.face}
+          alt="Soy juanjo hernandez rostro"
+          title="Soy Juanjo Hernández rostro creativo."
+        />
+      </div>
       <div className="about__text" title="Sobre mi texto.">
         <p>
           Hola! <br />
@@ -39,13 +46,7 @@ const About = (props) => {
         </p>
         {children}
       </div>
-      <div className="about__face-image">
-        <img
-          src={images.face}
-          alt="Soy juanjo hernandez rostro"
-          title="Soy Juanjo Hernández rostro creativo."
-        />
-      </div>
+      
     </section>
   );
 };

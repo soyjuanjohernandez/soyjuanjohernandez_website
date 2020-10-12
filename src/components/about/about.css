@@ -35,3 +35,17 @@
 .about__face-image img {
   width: 400px;
 }
+
+@media (max-width: 900px) {
+  .about{
+    display: flex;
+    flex-direction: column;
+    
+    height: auto;
+  }
+  .about__face-image img {
+    margin-top: 30px;
+  }
+  
+  
+}

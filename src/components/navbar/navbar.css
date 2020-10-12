@@ -45,3 +45,7 @@
   transform: rotate(360deg) scale(0.9);
   opacity: 1;
 }
+
+@media (max-width: 735px) {
+ 
+}
