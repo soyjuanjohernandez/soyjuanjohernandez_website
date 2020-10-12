@@ -12,50 +12,49 @@
   box-sizing: border-box;
   overflow: hidden;
   transition: all 0.3s;
-  /* padding: 10px; */
   position: relative;
 }
 
 .project-card h3 {
  margin-left: 10px;
 }
+
 .project-card__techs {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 .project-card__logo-tech {
   height: 35px;
   width: auto;
-
 }
 
 .project-card__info{
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.404);
+  background-color: var(--color-bg-info-card);
   backdrop-filter: blur(2px);
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   bottom: -369px;
   transition: all .1s;
-
 }
+
 .project-card__info p{
  width: 80%;
  text-align: start;
  margin-top: 20px;
- text-shadow: var(--box-shadow);
+ /* text-shadow: var(--box-shadow); */
 }
+
 .project-card__info a{
   position: absolute;
   bottom: 20px;
   cursor: pointer;
-
 }
 
 .project-card:hover .project-card__info{

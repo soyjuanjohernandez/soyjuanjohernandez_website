@@ -28,6 +28,7 @@ function App() {
       document.querySelector('.navbar-item__image--contact').src = images.contact_two_dark;
       document.querySelector('.button-theme__icon').src = images.dark;
       document.querySelector(".about__title-image").src = images.about_dark;
+      document.querySelector(".projects__title img").src = images.projects_dark;
     }else{
       htmlElement.setAttribute('data-theme', 'dark')
       document.querySelector('.navbar__logo-img').src= images.nav_logo_negative
@@ -37,6 +38,7 @@ function App() {
       document.querySelector('.navbar-item__image--contact').src = images.contact_two;
       document.querySelector('.button-theme__icon').src = images.light;
       document.querySelector(".about__title-image").src = images.about;
+      document.querySelector(".projects__title img").src = images.projects;
     }
 
   }

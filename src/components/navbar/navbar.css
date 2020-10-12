@@ -8,6 +8,7 @@
   height: 60px;
   background-color: var(--color-primary-alt);
   box-shadow: var(--box-shadow);
+  z-index: 1;
 }
 .navbar__logo {
   cursor: pointer;

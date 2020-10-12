@@ -22,6 +22,7 @@ const images = {
     nav_logo_color: require( './nav_logo_color.svg'),
     nav_logo_negative: require( './nav_logo_color_negative.svg'),
     projects: require( './proyectos.svg'),
+    projects_dark: require( './proyectos_dark.svg'),
     react: require( './react.svg'),
     sass: require( './sass.svg'),
     about: require( './sobre_mi.svg'),
