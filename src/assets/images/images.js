@@ -25,6 +25,7 @@ const images = {
     react: require( './react.svg'),
     sass: require( './sass.svg'),
     about: require( './sobre_mi.svg'),
+    about_dark: require( './sobre_mi_dark.svg'),
     web_components: require( './web_components.svg'),
     webpack: require( './webpack.svg'),
 

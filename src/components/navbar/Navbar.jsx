@@ -4,7 +4,8 @@ import { NavHashLink as NavLink } from "react-router-hash-link";
 import images from "../../assets/images/images";
 import NavbarItem from "../navbarItem/NavbarItem";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {changeColor} = props;
 
   useEffect(() => {
     document.querySelector('.navbar-item__image.navbar-item__image--about').src = images.about_two;
@@ -13,30 +14,6 @@ const Navbar = () => {
     document.querySelector('.navbar-item__image--contact').src = images.contact_two;
     document.querySelector('.button-theme__icon').src = images.light;
   });
-
-  const changeColor = () => {
-    const htmlElement = document.documentElement;
-    let elementAtrib = htmlElement.getAttribute("data-theme");
-    if(elementAtrib === 'dark'){
-      htmlElement.setAttribute('data-theme', 'light');
-      document.querySelector('.navbar__logo-img').src= images.nav_logo_color
-      document.querySelector('.navbar-item__image.navbar-item__image--about').src= images.about_two_dark
-      document.querySelector('.navbar-item__image.navbar-item__image--projects').src= images.projects_two_dark;
-      document.querySelector('.navbar-item__image--blog').src = images.blog_two_dark;
-      document.querySelector('.navbar-item__image--contact').src = images.contact_two_dark;
-      document.querySelector('.button-theme__icon').src = images.dark;
-    }else{
-      htmlElement.setAttribute('data-theme', 'dark')
-      document.querySelector('.navbar__logo-img').src= images.nav_logo_negative
-      document.querySelector('.navbar-item__image.navbar-item__image--about').src= images.about_two
-      document.querySelector('.navbar-item__image.navbar-item__image--projects').src= images.projects_two;
-      document.querySelector('.navbar-item__image--blog').src = images.blog_two;
-      document.querySelector('.navbar-item__image--contact').src = images.contact_two;
-      document.querySelector('.button-theme__icon').src = images.light;
-    }
-
-  }
-
 
   return (
     <nav className="navbar">

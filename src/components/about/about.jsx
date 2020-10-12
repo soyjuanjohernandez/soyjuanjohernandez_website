@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import images from "../../assets/images/images";
 import "./about.css";
 
 const About = (props) => {
   const { children } = props;
-
+  
   return (
     <section className="about" id="about">
       <div className="about__title">
-        <img src={images.about} alt="Sobre mi" title="Sobre mi" />
+        <img
+          src={images.about}
+          alt="Sobre mi"
+          title="Sobre mi"
+          className="about__title-image"
+        />
       </div>
       <div className="about__text" title="Sobre mi texto.">
         <p>
