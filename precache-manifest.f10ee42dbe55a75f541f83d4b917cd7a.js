@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "977978e56d32bcae23e7183caf3690c0",
+    "revision": "f12cfda3e299bd90ba202a6f86bf7d48",
     "url": "/index.html"
   },
   {
-    "revision": "cdd0f20f6436c6d981cb",
-    "url": "/static/css/main.b239bfbd.chunk.css"
+    "revision": "27397628709b40b30b81",
+    "url": "/static/css/main.3ed9cab7.chunk.css"
   },
   {
-    "revision": "afed000a2e308577160a",
-    "url": "/static/js/2.feee0054.chunk.js"
+    "revision": "8ef09a6a4e0551c954f0",
+    "url": "/static/js/2.ef286d05.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.feee0054.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.ef286d05.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cdd0f20f6436c6d981cb",
-    "url": "/static/js/main.2ec06ada.chunk.js"
+    "revision": "27397628709b40b30b81",
+    "url": "/static/js/main.018afffd.chunk.js"
   },
   {
     "revision": "df709ed65e685e4b0b9d",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0b0f19291565a0e0b22779b29bff841e",
     "url": "/static/media/about_two_states.0b0f1929.svg"
+  },
+  {
+    "revision": "79b8d53aa9e3eba4fbe618260d2fbc16",
+    "url": "/static/media/about_two_states_dark.79b8d53a.svg"
   },
   {
     "revision": "803efac1695903bb4e550c681905b3c4",
@@ -44,8 +48,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/blog_two_states.531f659b.svg"
   },
   {
+    "revision": "20dfb3f27207dad3a0bd66adcabaa90f",
+    "url": "/static/media/blog_two_states_dark.20dfb3f2.svg"
+  },
+  {
     "revision": "774b38082b97a4dc67dc91e9a760c4df",
     "url": "/static/media/contact_two_states.774b3808.svg"
+  },
+  {
+    "revision": "81b1e083dbe7bfce89c22edb658f57e4",
+    "url": "/static/media/contact_two_states_dark.81b1e083.svg"
   },
   {
     "revision": "13f9b9f09974a5c78218997508ee0067",
@@ -108,8 +120,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/projects_two_states.ed10708a.svg"
   },
   {
+    "revision": "d7abca5cb43e24c9cc0124369f18b7ef",
+    "url": "/static/media/projects_two_states_dark.d7abca5c.svg"
+  },
+  {
     "revision": "17530d37eab9b63a70c1780d944a3369",
     "url": "/static/media/proyectos.17530d37.svg"
+  },
+  {
+    "revision": "1e996de227ab2ede6572104405169b68",
+    "url": "/static/media/proyectos_dark.1e996de2.svg"
   },
   {
     "revision": "717140295717546092adbaea34b48f95",
@@ -122,6 +142,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "21ef040d54962c71b114a3a9edfd16dd",
     "url": "/static/media/sobre_mi.21ef040d.svg"
+  },
+  {
+    "revision": "110af15758cc074eb52d4218d2a15b05",
+    "url": "/static/media/sobre_mi_dark.110af157.svg"
   },
   {
     "revision": "91adcb48d6e3d266342ea0783626687a",

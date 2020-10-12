@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="353" height="50" viewBox="0 0 353 50">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-about_two_states);
+      }
+
+      .cls-2 {
+        fill: #3F3F3F;
+        font-size: 20px;
+        font-family: Nunito-Bold, Nunito;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e44d26"/>
+      <stop offset="0.223" stop-color="#e65322"/>
+      <stop offset="0.525" stop-color="#ed6418"/>
+      <stop offset="0.87" stop-color="#f98007"/>
+      <stop offset="1" stop-color="#ff8d00"/>
+    </linearGradient>
+    <clipPath id="clip-about_two_states">
+      <rect width="353" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="about_two_states" class="cls-1">
+    <text id="Sobre_mi" data-name="Sobre mi" class="cls-2" transform="translate(94 32)"><tspan x="-41.16" y="0">Sobre mi</tspan></text>
+    <g id="Grupo_245" data-name="Grupo 245" transform="translate(-419 63)">
+      <text id="_.Sobre_mi__" data-name=".Sobre mi { _" class="cls-2" transform="translate(731 -31)"><tspan x="-116.08" y="0">.Sobre mi { _</tspan></text>
+      <path id="Trazado_169" data-name="Trazado 169" class="cls-3" d="M301.408,171.8a2.622,2.622,0,0,1-2.619-2.619v-5.031a2.619,2.619,0,0,1,5.238,0v2.412h71.394V128.694H305.49a2.619,2.619,0,1,1,0-5.238H378.04a2.622,2.622,0,0,1,2.618,2.619v43.1a2.622,2.622,0,0,1-2.618,2.619Z" transform="translate(376.336 -185.456)"/>
+    </g>
+  </g>
+</svg>
