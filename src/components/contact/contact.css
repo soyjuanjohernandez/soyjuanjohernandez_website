@@ -1,0 +1,17 @@
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 380px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+.contact__social {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
