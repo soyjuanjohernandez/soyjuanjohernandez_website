@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import images from "../../assets/images/images";
 import "./about.css";
 
@@ -27,22 +27,22 @@ const About = (props) => {
           Hola! <br />
           <br />
           Soy Juan José, desarrollador frontend, Tecnólogo en producción de
-          multimedia del SENA y estudiante activo en Platzi Master 👨‍💻.
+          multimedia del SENA y estudiante activo en Platzi Master <span role="img" aria-label="emoji"> 👨‍💻</span>.
         </p>
         <p>
           Me gusta aprender algo nuevo constantemente, pienso que la creatividad
           y la innovación se fortalecen con un conocimiento cosmopolita y
-          multicultural 🎎.
+          multicultural <span role="img" aria-label="emoji">  🎎</span>.
         </p>
         <p>
           También me gusta la música en general, especialmente el rock , la
           música clásica y el jazz. Estudié música y suelo tocar la guitarra,
-          algunas veces clásica y otras la eléctrica 🤘.
+          algunas veces clásica y otras la eléctrica <span role="img" aria-label="emoji"> 🤘</span>.
         </p>
         <p>
           Me apasiona y maravilla la capacidad que tiene el desarrollo de
           software de cambiar el mundo y para llevar a la humanidad a nuevos
-          horizontes, como el planeta marte por ejemplo 👩‍🚀.
+          horizontes, como el planeta marte por ejemplo <span role="img" aria-label="emoji"> 👩‍🚀</span>.
         </p>
         {children}
       </div>

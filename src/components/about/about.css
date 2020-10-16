@@ -40,12 +40,11 @@
   .about{
     display: flex;
     flex-direction: column;
-    
     height: auto;
+    padding: 30px 10px;
   }
   .about__face-image img {
     margin-top: 30px;
+    width: 250px;
   }
-  
-  
 }
