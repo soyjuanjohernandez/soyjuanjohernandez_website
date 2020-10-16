@@ -20,6 +20,7 @@
 }
 
 @media (min-width: 1103px) {
+ 
   .projects__cards {
     grid-template-columns: repeat(3, 331px);
   }
@@ -27,5 +28,15 @@
 @media screen and (max-width: 1102px) and (min-width: 750px) {
   .projects__cards {
     grid-template-columns: repeat(2, 331px);
+  }
+  
+}
+@media (max-width: 900px) {
+  .projects{
+    padding: 10px 0;
+  }
+  .projects__title {
+    justify-self: start;
+    margin: 40px 20px;
   }
 }
