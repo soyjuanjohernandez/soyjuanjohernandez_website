@@ -19,6 +19,8 @@ const images = {
     light: require( './light.svg'),
     logo_banner: require( './logo_banner_color.svg'),
     logo_banner_mono: require( './logo_banner_monocolor.svg'),
+    menu: require('./menu.svg'),
+    menu_white: require('./menu_white.svg'),
     nav_logo_color: require( './nav_logo_color.svg'),
     nav_logo_negative: require( './nav_logo_color_negative.svg'),
     projects: require( './proyectos.svg'),

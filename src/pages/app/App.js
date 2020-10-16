@@ -34,6 +34,7 @@ function App() {
       document.querySelector(".contact__instagram").src = images.instagram;
       document.querySelector(".contact__github").src = images.github;
       document.querySelector(".contact__linkedin").src = images.linkedin;
+      document.querySelector(".navbar__collapsed-button img").src = images.menu;
     }else{
       htmlElement.setAttribute('data-theme', 'dark')
       document.querySelector('.navbar__logo-img').src= images.nav_logo_negative
@@ -49,6 +50,7 @@ function App() {
       document.querySelector(".contact__instagram").src = images.instagram_white;
       document.querySelector(".contact__github").src = images.github_white;
       document.querySelector(".contact__linkedin").src = images.linkedin_white;
+      document.querySelector(".navbar__collapsed-button img").src = images.menu_white;
     }
 
   }
