@@ -35,6 +35,18 @@ const images = {
     ourclothe: require( './ourclothe.png'),
     product_card: require( './product_card.png'),
     social_dashboard: require( './social_dashboard.png'),
+
+    // contact
+    logo_footer: require( './logo_footer.svg'),
+    logo_footer_mono: require( './logo_footer_mono.svg'),
+    github: require('./github.svg'),
+    github_white: require('./github_white.svg'),
+    instagram: require('./instagram.svg'),
+    instagram_white: require('./instagram_white.svg'),
+    linkedin: require('./linkedin.svg'),
+    linkedin_white: require('./linkedin_white.svg'),
+    twitter: require('./twitter.svg'),
+    twitter_white: require('./twitter_white.svg')
 }
 
 export default images;
