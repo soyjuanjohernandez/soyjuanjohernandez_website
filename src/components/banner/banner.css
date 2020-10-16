@@ -1,12 +1,23 @@
-.banner{
-    height: 70vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: url('../../assets/images/background_banner_dark_theme.png') no-repeat;
-    background-size: cover;
+.banner {
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("../../assets/images/background_banner_dark_theme.png")
+    no-repeat;
+  background-size: cover;
 }
 
-.banner img{
-    width: 400px;
+.banner img {
+  width: 400px;
+}
+
+@media (max-width: 900px) {
+  .banner {
+    height: 60vh;
+    background-position-x: center;
+  }
+  .banner img {
+    width: 300px;
+  }
 }
