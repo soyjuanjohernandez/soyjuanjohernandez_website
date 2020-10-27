@@ -1,3 +1,9 @@
+html {
+    --color-primary:#3F3F3F;
+    --color-secondary:#FFFFFF;
+    --color-primary-alt:#545454;
+    --color-bg-info-card:rgba(29, 29, 29, 0.753); 
+}
 html[data-theme=dark] {
     --color-primary:#3F3F3F;
     --color-secondary:#FFFFFF;

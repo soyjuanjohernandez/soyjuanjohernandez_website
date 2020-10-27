@@ -1,0 +1,30 @@
+.blog {
+  height: 100vh;
+  /* display: flex; */
+  margin-top: 60px;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+  /* background-color: rgb(24, 111, 122); */
+}
+/* 
+.blog img {
+  width: 400px;
+} */
+
+/* @media (max-width: 900px) {
+  .banner {
+    height: 60vh;
+    background-position-x: center;
+  }
+  .banner img {
+    width: 300px;
+  }
+} */
+
+.blog .contact{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

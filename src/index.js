@@ -4,7 +4,9 @@ import './styles/index.css';
 import App from "./pages/app/App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
-import './js/config/configFirebase'
+import './js/config/configFirebase';
+
+
 
 ReactDOM.render(
   <>

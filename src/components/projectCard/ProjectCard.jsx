@@ -23,14 +23,14 @@ const ProjectCard = (props) => {
     infoText,
     buttonText,
     urlProject,
-    buttonType
+    buttonType,
   } = props;
 
   return (
     <div className="project-card" id="project-card">
       <h3>{cardTitle}</h3>
 
-      <img src={image} alt={imageAlt} title={title} className />
+      <img src={image} alt={imageAlt} title={title} />
 
       <div className="project-card__techs">
         <img
@@ -61,9 +61,8 @@ const ProjectCard = (props) => {
 
       <div className="project-card__info" title="Project info">
         <p>{infoText}</p>
-      
-          <Button value={buttonText} type={buttonType} url={urlProject}/>
-        
+
+        <Button value={buttonText} type={buttonType} url={urlProject} />
       </div>
     </div>
   );

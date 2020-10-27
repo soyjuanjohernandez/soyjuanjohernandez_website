@@ -1,7 +1,7 @@
-.App {
+.main {
   text-align: center;
-  /* margin-top: 60px; */
-  /* height:calc(100vh - 60px); */
+  margin-top: 60px;
+  height:calc(100vh - 60px);
   overflow: auto;
   background-color: var(--color-primary);
 }

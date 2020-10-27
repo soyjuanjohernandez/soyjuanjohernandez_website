@@ -1,0 +1,106 @@
+.navbar-blog {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: var(--color-primary-alt);
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+}
+.navbar-blog__logo {
+  cursor: pointer;
+  display: flex;
+  margin-left: 20px;
+}
+.navbar-blog__menu {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.navbar-blog__item {
+  transition: all 0.1s;
+  position: relative;
+  text-decoration: none;
+}
+.navbar-blog__item:active {
+  transform: scale(0.92);
+}
+.navbar-blog__button-theme {
+  display: flex;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.navbar-blog__button-theme img {
+  transform: scale(0.9);
+  opacity: 1;
+}
+.navbar-blog__button-theme:hover img {
+  transform: scale(1) rotate(360deg);
+  opacity: 0.71;
+}
+.navbar-blog__button-theme:active img {
+  transform: rotate(360deg) scale(0.9);
+  opacity: 1;
+}
+.navbar-blog__collapsed-button{
+  display: none;
+}
+
+@media (max-width: 735px) {
+  .navbar-blog__menu {
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary-alt);
+    box-shadow: var(--box-shadow);
+    right: -40px;
+    position: absolute;
+    top: 59px;
+    padding: 0;
+    border-radius: 0 0 0 10px;
+    width: 0px;
+    height: 0px;
+    transition: all .2s;
+    overflow: hidden;
+  }
+  .navbar-blog__collapsed-button{
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 53px;
+    cursor: pointer;
+  }
+}
+
+.displayToggle{
+  display: flex;
+  width: 158px;
+  height: 200px;
+  transition: all .2s;
+  padding: 10px;
+}
+
+.navbar-blog-item__normal{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  /* border: 1px solid var(--color-primary); */
+  padding: 5px;
+  border-radius: 5px;
+}
+.navbar-blog-item__normal:hover{
+ opacity: .7;
+}
+
+.navbar-blog .navbar-item img {
+  cursor: context-menu;
+  position: relative;
+  transform: translate(-144px);
+}
+.navbar-blog .navbar-item {
+  cursor: none;
+
+}

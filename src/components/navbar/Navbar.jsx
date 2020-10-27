@@ -1,36 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./navbar.css";
-import { NavHashLink as NavLink } from "react-router-hash-link";
+import { NavHashLink } from "react-router-hash-link";
 import images from "../../assets/images/images";
 import NavbarItem from "../navbarItem/NavbarItem";
 
 const Navbar = (props) => {
   const { changeColor } = props;
 
-  useEffect(() => {
-    document.querySelector(
-      ".navbar-item__image.navbar-item__image--about"
-    ).src = images.about_two;
-    document.querySelector(".navbar-item__image--projects").src =
-      images.projects_two;
-    document.querySelector(".navbar-item__image--blog").src = images.blog_two;
-    document.querySelector(".navbar-item__image--contact").src =
-      images.contact_two;
-    document.querySelector(".button-theme__icon").src = images.light;
-  });
-
-  // let menuToggle = document.querySelector(".navbar__collapsed-button");
-  // let menu = document.querySelector(".navbar__menu");
-
-   const menuToggle = () => {
+  const menuToggle = () => {
     let menuToggle = document.querySelector(".navbar__menu");
     menuToggle.classList.toggle("displayToggle");
-    };
-  
+  };
 
   return (
     <nav className="navbar">
-      <NavLink to="#banner" smooth title="Home">
+      <NavHashLink to="#banner" smooth title="Home">
         <div
           className="navbar__logo navbar__item selected"
           title="Logotipo Soy Juanjo Hernández"
@@ -42,50 +26,57 @@ const Navbar = (props) => {
             title="Logotipo Soy Juanjo Hernández"
           />
         </div>
-      </NavLink>
+      </NavHashLink>
 
       <div className="navbar__collapsed-button" onClick={menuToggle}>
-        <img src={images.menu_white} alt="Menú" title="Menú"/>
+        <img src={images.menu_white} alt="Menú" title="Menú" />
       </div>
 
       <div className="navbar__menu">
-        <NavLink to="#about" smooth className="navbar__item " title="About">
+        <NavHashLink to="#about" smooth className="navbar__item " title="About">
           <NavbarItem
+            itemImage={images.about_two}
             title="Sobre mi"
             classNameImage="navbar-item__image--about"
           />
-        </NavLink>
+        </NavHashLink>
 
-        <NavLink
+        <NavHashLink
           to="#projects"
           smooth
           className="navbar__item"
           title="Projects"
         >
           <NavbarItem
+            itemImage={images.projects_two}
             title="Proyectos"
             classNameImage="navbar-item__image--projects"
           />
-        </NavLink>
+        </NavHashLink>
 
-        <NavLink to="#" smooth className="navbar__item" title="Blog">
-          <NavbarItem title="Blog" classNameImage="navbar-item__image--blog" />
-        </NavLink>
+        <NavHashLink to="/blog" smooth className="navbar__item" title="Blog">
+          <NavbarItem
+            itemImage={images.blog_two}
+            title="Blog"
+            classNameImage="navbar-item__image--blog"
+          />
+        </NavHashLink>
 
-        <NavLink
+        <NavHashLink
           to="#contact"
           smooth
           className="navbar__item"
           title="Contáctame"
         >
           <NavbarItem
+            itemImage={images.contact_two}
             title="Contáctame"
             classNameImage="navbar-item__image--contact"
           />
-        </NavLink>
+        </NavHashLink>
 
         <div className="navbar__button-theme" onClick={changeColor}>
-          <img alt="Light" title="Light" className="button-theme__icon" />
+          <img src={ images.light} alt="Light" title="Light" className="button-theme__icon" />
         </div>
       </div>
     </nav>
