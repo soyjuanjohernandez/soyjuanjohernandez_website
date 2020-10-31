@@ -6,7 +6,7 @@ import NavbarItem from "../navbarItem/NavbarItem";
 import changeColorLight from "./changeColorlight";
 
 const NavbarBlog = (props) => {
-  const { changeColor, openModalSignUp, openModalSignIn } = props;
+  const { changeColor, openModalSignUp, openModalSignIn, logoutUser } = props;
 
   useEffect(() => {
     let elementAtrib = document.documentElement.getAttribute("data-theme");
@@ -28,6 +28,7 @@ const NavbarBlog = (props) => {
         <div
           className="navbar-blog__logo navbar-blog__item selected"
           title="Logotipo Soy Juanjo Hernández"
+          // onClick={}
         >
           <img
             className="navbar-blog__logo-img"
@@ -62,6 +63,10 @@ const NavbarBlog = (props) => {
 
         <span className="navbar-blog-item__normal" onClick={openModalSignIn}>
           Sign In
+        </span>
+
+        <span className="navbar-blog-item__normal" onClick={logoutUser}>
+          Logout
         </span>
         {/* <button onClick={openModal}>mmodal</button> */}
 

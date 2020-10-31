@@ -1,0 +1,13 @@
+.post-form{
+    height: 100vh;
+    background-color: var(--color-primary-alt);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+   
+}
+
+.post-form__form{
+    display: flex;
+    flex-direction: column;
+}

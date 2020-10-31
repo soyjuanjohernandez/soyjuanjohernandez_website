@@ -1,22 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import "./signin.css";
 
-import Modal from "../modal/modal"
+import Modal from "../modal/modal";
 
 const SignInForm = (props) => {
-  const { onClose, isOpen } = props;
+  // const { onClose, isOpen } = props;
+  const { onCloseModal, isOpen, loginUser } = props;
+
+  const initialStateValues = {
+    email: "",
+    password: "",
+  };
+
+  const [values, setValues] = useState(initialStateValues);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setValues({ ...values, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    loginUser(values);
+    setValues({ email: "", password: "" });
+  };
 
   return (
-    <Modal onClose={onClose} isOpen={isOpen}>
-    <h3>Ingresar</h3>
-    <form action="">
-      <input type="text" placeholder="place holder del input"/>
-      <br/>
-      
-      <br/>
-      <input type="text" placeholder="place holder del input"/>
-    </form>
+    <Modal onClose={onCloseModal} isOpen={isOpen}>
+      <h3>Ingresar</h3>
+      <form action="" onSubmit={handleSubmit}>
+        <input
+          type="email"
+          name="email"
+          placeholder="Inserte su email"
+          value={values.email}
+          onChange={handleInputChange}
+          required
+        />
+        <br />
+
+        <br />
+        <input
+          type="text"
+          name="password"
+          placeholder="Digite la contraseña"
+          value={values.password}
+          onChange={handleInputChange}
+          required
+        />
+        <br />
+        <br />
+        <button>Save</button>
+      </form>
     </Modal>
-  )
+  );
 };
 export default SignInForm;

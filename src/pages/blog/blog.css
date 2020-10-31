@@ -1,10 +1,11 @@
 .blog {
-  height: 100vh;
+  height: calc(100vh - 60px);
   /* display: flex; */
   margin-top: 60px;
   justify-content: space-around;
   align-items: center;
   position: relative;
+  overflow: auto;
 
   /* background-color: rgb(24, 111, 122); */
 }
@@ -24,7 +25,8 @@
 } */
 
 .blog .contact{
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 100%; */
+  background-color: var(--color-primary-alt);
 }

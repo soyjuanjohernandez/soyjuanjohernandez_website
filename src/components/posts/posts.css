@@ -1,0 +1,31 @@
+.posts {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.posts__post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 300px;
+  height: 312px;
+  overflow: hidden;
+  background-color: var(--color-primary-alt);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.posts__post p {
+  width: 280px;
+  /* height: 72px; */
+  white-space: nowrap;
+  /* line-height: 82px; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.posts__post img {
+  width: 295px;
+
+}

@@ -1,17 +1,15 @@
 import React, { useState } from "react";
-import "./signUp.css";
+import "./postForm.css";
 
-import Modal from "../modal/modal";
-
-const SignUpForm = (props) => {
-  const { onCloseModal, isOpen, addUser } = props;
-
+const PostForm = (props) => {
+  const {  addUser } = props;
+  
   const initialStateValues = {
-    email: "",
-    password: "",
+    postTitle: "",
+    postContent: "",
   };
-
   const [values, setValues] = useState(initialStateValues);
+
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -25,18 +23,26 @@ const SignUpForm = (props) => {
   };
 
   return (
-    <Modal onClose={onCloseModal} isOpen={isOpen}>
-      <h3>Registrarse</h3>
-      <form action="" onSubmit={handleSubmit} className="sign-up-form">
+    <section className="post-form">
+      <h3>Crear post</h3>
+      <form action="" onSubmit={handleSubmit} className="post-form__form">
         <input
-          type="email"
-          name="email"
-          placeholder="Inserte su email"
+          type="text"
+          name="postTitle"
+          placeholder="titulo del post"
+          value={values.postTitle}
+          onChange={handleInputChange}
+          required
+        />
+
+        <textarea
+          name="postContent"
+          placeholder="Inserte su contenido en markdown"
           value={values.email}
           onChange={handleInputChange}
           required
         />
-        <br />
+        {/* <br />
 
         <br />
         <input
@@ -46,12 +52,11 @@ const SignUpForm = (props) => {
           value={values.password}
           onChange={handleInputChange}
           required
-        />
-        <br />
-        <br />
+        /> */}
+       
         <button>Save</button>
       </form>
-    </Modal>
+    </section>
   );
 };
-export default SignUpForm;
+export default PostForm;

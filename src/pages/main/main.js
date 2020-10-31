@@ -14,10 +14,10 @@ import changeColor from "./changeColor";
 
 function Main() {
   
-  useEffect(() => {
-    const htmlElement = document.documentElement;
-    htmlElement.setAttribute("data-theme", "dark");
-  });
+  // useEffect(() => {
+    // const htmlElement = document.documentElement;
+    // htmlElement.setAttribute("data-theme", "dark");
+  // });
   return (
     <div className="main">
       <Switch>

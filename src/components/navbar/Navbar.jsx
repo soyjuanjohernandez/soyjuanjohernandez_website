@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./navbar.css";
 import { NavHashLink } from "react-router-hash-link";
 import images from "../../assets/images/images";
 import NavbarItem from "../navbarItem/NavbarItem";
+import changeColorLight from "./changeColorlight";
 
 const Navbar = (props) => {
   const { changeColor } = props;
+
+  // useEffect(() => {
+  //   // let elementAtrib = document.documentElement.getAttribute("data-theme");
+  //   // if (elementAtrib === "light") {
+      
+  //     // changeColorLight();
+  //   // }
+  //   // changeColor();
+  // });
 
   const menuToggle = () => {
     let menuToggle = document.querySelector(".navbar__menu");
@@ -76,7 +86,12 @@ const Navbar = (props) => {
         </NavHashLink>
 
         <div className="navbar__button-theme" onClick={changeColor}>
-          <img src={ images.light} alt="Light" title="Light" className="button-theme__icon" />
+          <img
+            src={images.light}
+            alt="Light"
+            title="Light"
+            className="button-theme__icon"
+          />
         </div>
       </div>
     </nav>
