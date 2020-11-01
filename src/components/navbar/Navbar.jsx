@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./navbar.css";
 import { NavHashLink } from "react-router-hash-link";
 import images from "../../assets/images/images";
 import NavbarItem from "../navbarItem/NavbarItem";
-import changeColorLight from "./changeColorlight";
+// import changeColorLight from "./changeColorlight";
 
 const Navbar = (props) => {
   const { changeColor } = props;

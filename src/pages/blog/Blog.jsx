@@ -3,7 +3,7 @@ import NavbarBlog from "../../components/navbarBlog/NavbarBlog";
 import Contact from "../../components/contact/contact";
 import SignInForm from "../../components/signInForm/signin";
 import SignUpForm from "../../components/signUpForm/signUp";
-import Posts from "../../components/posts/posts";
+// import Posts from "../../components/posts/posts";
 import PostForm from "../../components/postForm/postForm";
 import { auth } from "../../js/config/configFirebase";
 
@@ -67,6 +67,10 @@ export default class Blog extends Component {
           alert(error.message);
         });
     };
+    // create post
+    const addPost = (postData) => {
+      console.log("DATA DEL POST EN BLOG", postData);
+    };
 
     // login
     const loginUser = (userDataLogin) => {
@@ -91,8 +95,6 @@ export default class Blog extends Component {
       });
     };
 
-
-
     return (
       <main className="blog" id="blog">
         <NavbarBlog
@@ -101,12 +103,10 @@ export default class Blog extends Component {
           openModalSignIn={toggleSignIn}
           logoutUser={logoutUser}
         />
-        {this.state.userState && 
-          <PostForm 
-          // addPost={addPost}
-          />
-        }
+        {this.state.userState && <PostForm addPost={addPost} />}
+
         {/* <Posts /> */}
+        
 
         <Contact />
 
@@ -114,6 +114,7 @@ export default class Blog extends Component {
           onCloseModal={handleCloseModal}
           isOpen={this.state.modalIsSignUpOpen}
           addUser={addUser}
+          
         />
 
         <SignInForm
@@ -121,6 +122,7 @@ export default class Blog extends Component {
           isOpen={this.state.modalIsSignInOpen}
           loginUser={loginUser}
         />
+        {/* <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aliquam soluta beatae adipisci eos expedita maxime dolorem nisi? Ad ab harum earum esse fugiat? Eaque, inventore! Distinctio nisi quidem accusamus.</h1> */}
       </main>
     );
   }

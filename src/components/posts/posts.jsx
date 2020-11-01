@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./posts.css";
-import { auth, fs } from "../../js/config/configFirebase";
+import { fs } from "../../js/config/configFirebase";
 
 const Posts = (props) => {
   const [posts, setPosts] = useState([]);

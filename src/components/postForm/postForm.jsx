@@ -1,15 +1,19 @@
 import React, { useState } from "react";
+import ReactMarkdown from "react-markdown";
 import "./postForm.css";
 
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dark, tomorrow, coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
 const PostForm = (props) => {
-  const {  addUser } = props;
-  
+  const {  addPost } = props;
+
   const initialStateValues = {
     postTitle: "",
     postContent: "",
   };
-  const [values, setValues] = useState(initialStateValues);
 
+  const [values, setValues] = useState(initialStateValues);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -18,13 +22,23 @@ const PostForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addUser(values);
+    addPost(values);
     setValues({ ...initialStateValues });
   };
+
+
+const Component = ({value, language}) => {
+  return (
+    <SyntaxHighlighter language={language ?? null} style={coldarkDark}>
+      {value ?? ''}
+    </SyntaxHighlighter>
+  );
+};
 
   return (
     <section className="post-form">
       <h3>Crear post</h3>
+      <div className="post-form__content">
       <form action="" onSubmit={handleSubmit} className="post-form__form">
         <input
           type="text"
@@ -38,24 +52,16 @@ const PostForm = (props) => {
         <textarea
           name="postContent"
           placeholder="Inserte su contenido en markdown"
-          value={values.email}
+          value={values.postContent}
           onChange={handleInputChange}
           required
+          autoFocus
         />
-        {/* <br />
 
-        <br />
-        <input
-          type="text"
-          name="password"
-          placeholder="Digite la contraseña"
-          value={values.password}
-          onChange={handleInputChange}
-          required
-        /> */}
-       
         <button>Save</button>
       </form>
+      <ReactMarkdown source={values.postContent} className="post-form__markdown" renderers={{code: Component,}} />
+      </div>
     </section>
   );
 };

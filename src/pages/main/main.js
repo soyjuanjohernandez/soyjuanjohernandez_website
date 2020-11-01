@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./main.css";
 
 import images from "../../assets/images/images";
 
 import Navbar from "../../components/navbar/Navbar";
 import Banner from "../../components/banner/Banner";
-import About from "../../components/about/About";
+import About from "../../components/about/about"
 import Projects from "../../components/projects/Projects";
 import Contact from "../../components/contact/contact";
 import { Switch, Route } from "react-router-dom";
