@@ -1,11 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import NavbarBlog from "../../components/navbarBlog/NavbarBlog";
 import Contact from "../../components/contact/contact";
 import SignInForm from "../../components/signInForm/signin";
 import SignUpForm from "../../components/signUpForm/signUp";
-// import Posts from "../../components/posts/posts";
+import Posts from "../../components/posts/posts";
+import PostDetail from "../../components/postDetail/postDetail";
 import PostForm from "../../components/postForm/postForm";
-import { auth } from "../../js/config/configFirebase";
+import { auth, fs } from "../../js/config/configFirebase";
 
 import "./blog.css";
 import changeColor from "./changeColorBlog";
@@ -17,6 +18,7 @@ export default class Blog extends Component {
       modalIsSignUpOpen: false,
       modalIsSignInOpen: false,
       userState: false,
+      postDetailDataState: "",
     };
   }
 
@@ -36,6 +38,7 @@ export default class Blog extends Component {
   }
 
   render() {
+    // const [postDetailDataState, setPostDetailDataState] = useState([]);
     // if theme ligth persist
     let elementAtrib = document.documentElement.getAttribute("data-theme");
     if (elementAtrib === "light") {
@@ -67,10 +70,6 @@ export default class Blog extends Component {
           alert(error.message);
         });
     };
-    // create post
-    const addPost = (postData) => {
-      console.log("DATA DEL POST EN BLOG", postData);
-    };
 
     // login
     const loginUser = (userDataLogin) => {
@@ -95,6 +94,56 @@ export default class Blog extends Component {
       });
     };
 
+    // create post
+    const addPost = (postData) => {
+      console.log("DATA DEL POST EN BLOG", postData);
+      fs.collection("post")
+        .doc()
+        .set(postData)
+        .then(() => {
+          alert("datos subidos exitosamente!");
+        })
+        .catch((error) => {
+          alert("error escribiendo el documento", error);
+        });
+    };
+
+    const daotsPost = (datos) => {
+      // console.log("DOTOS DE LA FUCNION", datos[0].postContent)
+      this.setState({ postDetailDataState: datos });
+    };
+
+    const showPost = async (postId, postDetailData) => {
+      let docRef = fs.collection("post").doc(postId);
+
+      docRef
+        .get()
+        .then(function (doc) {
+          if (doc.exists) {
+            console.log("Document data:", doc.data());
+            // console.log("Data toda:", postDetailData.postContent);
+            // setState(postDetailData);
+            // setState({ postDetailDataState: postDetailData })
+            // console.log("TYHIS", this);
+            // postDetailDataSend(postDetailData)
+            const docsPost = [];
+            docsPost.push(postDetailData);
+            // this.setState({ postDetailDataState: [docsPost] })
+            console.log("Dosc", docsPost);
+            daotsPost(docsPost);
+          } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+          }
+        })
+        .catch(function (error) {
+          console.log("Error getting document:", error);
+        });
+      return postDetailData;
+    };
+
+    const closeDetail = () => this.setState({ postDetailDataState: "" });
+
     return (
       <main className="blog" id="blog">
         <NavbarBlog
@@ -105,8 +154,17 @@ export default class Blog extends Component {
         />
         {this.state.userState && <PostForm addPost={addPost} />}
 
-        {/* <Posts /> */}
-        
+        {!this.state.postDetailDataState && <Posts showPost={showPost} />}
+
+        {this.state.postDetailDataState && (
+          <PostDetail
+            handleClose={closeDetail}
+            postDetailDataSend={
+              this.state.postDetailDataState &&
+              this.state.postDetailDataState[0].postContent
+            }
+          />
+        )}
 
         <Contact />
 
@@ -114,7 +172,6 @@ export default class Blog extends Component {
           onCloseModal={handleCloseModal}
           isOpen={this.state.modalIsSignUpOpen}
           addUser={addUser}
-          
         />
 
         <SignInForm

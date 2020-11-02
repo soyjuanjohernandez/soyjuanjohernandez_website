@@ -1,0 +1,17 @@
+.post-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  /* flex-wrap: wrap; */
+  /* height: 100vh; */
+  margin: initial;
+  padding: initial;
+}
+.post-detail p {
+
+  margin: initial;
+  padding: initial;
+}

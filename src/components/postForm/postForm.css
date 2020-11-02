@@ -7,6 +7,8 @@
   box-shadow: var(--box-shadow);
   text-align: initial !important;
   overflow: auto;
+  margin: initial;
+  padding: initial;
 }
 
 .post-form__content {
@@ -27,6 +29,7 @@
     height: 100%;
     font-size: 16px;
     line-height: 1.4;
+    padding:10px
 }
 
 

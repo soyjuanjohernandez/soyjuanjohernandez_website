@@ -1,7 +1,9 @@
 .posts {
   display: flex;
-  gap: 35px;
+  gap: 25px;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .posts__post {
@@ -26,6 +28,7 @@
   text-overflow: ellipsis;
 }
 .posts__post img {
-  width: 295px;
-
+  width: auto;
+  max-height: 182px;
+  align-self: center;
 }
