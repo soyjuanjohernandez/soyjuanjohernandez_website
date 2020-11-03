@@ -15,9 +15,6 @@ const PostDetail = (props) => {
   useEffect(() => {
     // getPosts();
   }, []);
-
-  // postDetailDataSend && setpostData({postDetailDataSend}) 
-  // const data = postDetailDataSend[0].postContent
   const Component = ({ value, language }) => {
     return (
       <SyntaxHighlighter language={language ?? null} style={coldarkDark}>
@@ -29,24 +26,14 @@ const PostDetail = (props) => {
   return (
     <section className="post-detail">
       <button onClick={handleClose}>X</button>
-      <h1>{console.log(postDetailDataSend[0].postTitle)}</h1>
+      <input type="text" autoFocus disable />
+      <h1 autoFocus>{console.log(postDetailDataSend[0].postTitle)}</h1>
       <ReactMarkdown
         source={postDetailDataSend}
         plugins={[gfm]}
         className="post-form__markdown"
         renderers={{ code: Component }}
       />
-
-      {/* <div
-          className="posts__post"
-          id={post.id}
-          key={post.id}
-
-        >
-          <h1>{post.title}</h1>
-          <img src={post.img} alt={post.title} />
-          <p>{post.description}</p>
-        </div> */}
     </section>
   );
 };

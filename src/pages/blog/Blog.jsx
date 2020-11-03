@@ -10,6 +10,7 @@ import { auth, fs } from "../../js/config/configFirebase";
 
 import "./blog.css";
 import changeColor from "./changeColorBlog";
+import { Route } from "react-router-dom";
 
 export default class Blog extends Component {
   constructor(props) {
@@ -121,18 +122,11 @@ export default class Blog extends Component {
         .then(function (doc) {
           if (doc.exists) {
             console.log("Document data:", doc.data());
-            // console.log("Data toda:", postDetailData.postContent);
-            // setState(postDetailData);
-            // setState({ postDetailDataState: postDetailData })
-            // console.log("TYHIS", this);
-            // postDetailDataSend(postDetailData)
             const docsPost = [];
             docsPost.push(postDetailData);
-            // this.setState({ postDetailDataState: [docsPost] })
             console.log("Dosc", docsPost);
             daotsPost(docsPost);
           } else {
-            // doc.data() will be undefined in this case
             console.log("No such document!");
           }
         })
