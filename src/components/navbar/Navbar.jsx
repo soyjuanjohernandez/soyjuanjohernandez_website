@@ -68,12 +68,12 @@ const Navbar = (props) => {
           />
         </NavHashLink>
 
-        <a href="https://shorturl.at/cstCU" target="_blank" rel="noopener noreferrer">
+        <a href="https://firebasestorage.googleapis.com/v0/b/soyjuanjohernandez-blog.appspot.com/o/Soy_Juanjo_hernandez_brand.pdf?alt=media&token=d54e60cb-56fb-46fd-8953-853d33ae3535" target="_blank" rel="noopener noreferrer">
           <NavbarItem
             classNameItem="navbar__item"
             itemImage={images.brand}
             title="Blog"
-            classNameImage="navbar-item__image--blog"
+            classNameImage="navbar-item__image--brand"
           />
         </a>
 

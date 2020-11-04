@@ -8,6 +8,7 @@ const changeColor = () => {
       document.querySelector('.navbar-item__image.navbar-item__image--about').src= images.about_two_dark
       document.querySelector('.navbar-item__image.navbar-item__image--projects').src= images.projects_two_dark;
       document.querySelector('.navbar-item__image--blog').src = images.blog_two_dark;
+      document.querySelector('.navbar-item__image--brand').src = images.brand_dark;
       document.querySelector('.navbar-item__image--contact').src = images.contact_two_dark;
       document.querySelector('.button-theme__icon').src = images.dark;
       document.querySelector(".about__title-image").src = images.about_dark;
@@ -24,6 +25,7 @@ const changeColor = () => {
       document.querySelector('.navbar-item__image.navbar-item__image--about').src= images.about_two
       document.querySelector('.navbar-item__image.navbar-item__image--projects').src= images.projects_two;
       document.querySelector('.navbar-item__image--blog').src = images.blog_two;
+      document.querySelector('.navbar-item__image--brand').src = images.brand;
       document.querySelector('.navbar-item__image--contact').src = images.contact_two;
       document.querySelector('.button-theme__icon').src = images.light;
       document.querySelector(".about__title-image").src = images.about;
