@@ -2,6 +2,8 @@ const images = {
     arrow: require('./arrow.svg'),
     background_banner_dark: require('./background_banner_dark_theme.png'),
     background_banner_light: require( './background_banner_light_theme.png'),
+    brand: require( './brand.svg'),
+    brand_dark: require( './brand_dark.svg'),
     blog: require( './blog.svg'),
     contact: require( './contacto.svg'),
     contact_two: require( './contact_two_states.svg'),

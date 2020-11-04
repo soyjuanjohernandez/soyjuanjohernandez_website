@@ -81,3 +81,11 @@ input {
 input:focus {
   border-color: var(--color-secondary);
 }
+
+img.contact__logo {
+  margin-right: 40px;
+}
+
+button.button{
+  width: auto;
+}

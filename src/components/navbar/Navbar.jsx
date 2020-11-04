@@ -54,14 +54,6 @@ const Navbar = (props) => {
           />
         </NavHashLink>
 
-        <NavHashLink to="/blog" smooth className="navbar__item" title="Blog">
-          <NavbarItem
-            itemImage={images.blog_two}
-            title="Blog"
-            classNameImage="navbar-item__image--blog"
-          />
-        </NavHashLink>
-
         <NavHashLink
           to="#contact"
           smooth
@@ -69,9 +61,27 @@ const Navbar = (props) => {
           title="Contáctame"
         >
           <NavbarItem
+            to="/"
             itemImage={images.contact_two}
             title="Contáctame"
             classNameImage="navbar-item__image--contact"
+          />
+        </NavHashLink>
+
+        <a href="https://shorturl.at/cstCU" target="_blank" rel="noopener noreferrer">
+          <NavbarItem
+            classNameItem="navbar__item"
+            itemImage={images.brand}
+            title="Blog"
+            classNameImage="navbar-item__image--blog"
+          />
+        </a>
+
+        <NavHashLink to="/blog" smooth className="navbar__item" title="Blog">
+          <NavbarItem
+            itemImage={images.blog_two}
+            title="Blog"
+            classNameImage="navbar-item__image--blog"
           />
         </NavHashLink>
 
