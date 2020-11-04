@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./main.css";
 
 import images from "../../assets/images/images";
@@ -13,11 +13,6 @@ import { Switch, Route } from "react-router-dom";
 import changeColor from "./changeColor";
 
 function Main() {
-  
-  // useEffect(() => {
-    // const htmlElement = document.documentElement;
-    // htmlElement.setAttribute("data-theme", "dark");
-  // });
   return (
     <div className="main">
       <Switch>

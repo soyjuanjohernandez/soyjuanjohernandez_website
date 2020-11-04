@@ -4,10 +4,12 @@
   overflow: hidden;
   transition: all 0.3s;
 }
+
 .navbar-item img {
     height: 40px;
     transform: translate(0px);
 }
+
 .navbar-item:hover img {
   cursor: pointer;
   position: relative;

@@ -1,16 +1,14 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import NavbarBlog from "../../components/navbarBlog/NavbarBlog";
 import Contact from "../../components/contact/contact";
 import SignInForm from "../../components/signInForm/signin";
 import SignUpForm from "../../components/signUpForm/signUp";
 import Posts from "../../components/posts/posts";
 import PostDetail from "../../components/postDetail/postDetail";
-import PostForm from "../../components/postForm/postForm";
+// import PostForm from "../../components/postForm/postForm";
 import { auth, fs } from "../../js/config/configFirebase";
-
-import "./blog.css";
 import changeColor from "./changeColorBlog";
-import { Route } from "react-router-dom";
+import "./blog.css";
 
 export default class Blog extends Component {
   constructor(props) {
@@ -39,8 +37,6 @@ export default class Blog extends Component {
   }
 
   render() {
-    // const [postDetailDataState, setPostDetailDataState] = useState([]);
-    // if theme ligth persist
     let elementAtrib = document.documentElement.getAttribute("data-theme");
     if (elementAtrib === "light") {
       const htmlElement = document.documentElement;
@@ -80,7 +76,6 @@ export default class Blog extends Component {
         .then((userCredential) => {
           alert("login !");
           toggleSignIn();
-          // console.log("THISSSS", this);
         })
         .catch((error) => {
           console.error(error);
@@ -110,7 +105,6 @@ export default class Blog extends Component {
     };
 
     const daotsPost = (datos) => {
-      // console.log("DOTOS DE LA FUCNION", datos[0].postContent)
       this.setState({ postDetailDataState: datos });
     };
 
@@ -145,12 +139,16 @@ export default class Blog extends Component {
           openModalSignUp={handleOpenModal}
           openModalSignIn={toggleSignIn}
           logoutUser={logoutUser}
+          user={this.state.userState}
         />
-        {this.state.userState && <PostForm addPost={addPost} />}
 
-        {!this.state.postDetailDataState && <Posts showPost={showPost} />}
+        {/* {this.state.userState && <PostForm addPost={addPost} />} */}
 
-        {this.state.postDetailDataState && (
+        {!this.state.postDetailDataState && this.state.userState && (
+          <Posts showPost={showPost} />
+        )}
+
+        {this.state.postDetailDataState && this.state.userState && (
           <PostDetail
             handleClose={closeDetail}
             postDetailDataSend={
@@ -173,10 +171,7 @@ export default class Blog extends Component {
           isOpen={this.state.modalIsSignInOpen}
           loginUser={loginUser}
         />
-        {/* <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aliquam soluta beatae adipisci eos expedita maxime dolorem nisi? Ad ab harum earum esse fugiat? Eaque, inventore! Distinctio nisi quidem accusamus.</h1> */}
       </main>
     );
   }
 }
-
-// export default Blog;

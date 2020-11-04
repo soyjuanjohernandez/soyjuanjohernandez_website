@@ -42,6 +42,7 @@ const PostForm = (props) => {
       <h3>Crear post</h3>
       <div className="post-form__content">
         <form action="" onSubmit={handleSubmit} className="post-form__form">
+
           <input
             type="text"
             name="postTitle"
@@ -50,6 +51,7 @@ const PostForm = (props) => {
             onChange={handleInputChange}
             required
           />
+
           <input
             type="text"
             name="postDescription"
@@ -58,6 +60,7 @@ const PostForm = (props) => {
             onChange={handleInputChange}
             required
           />
+
           <input
             type="text"
             name="mainImage"
@@ -77,13 +80,16 @@ const PostForm = (props) => {
           />
 
           <button>Save</button>
+
         </form>
+
         <ReactMarkdown
           source={values.postContent}
           plugins={[gfm]}
           className="post-form__markdown"
           renderers={{ code: Component }}
         />
+
       </div>
     </section>
   );

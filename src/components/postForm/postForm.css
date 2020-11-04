@@ -3,19 +3,23 @@
   background-color: var(--color-primary-alt);
   margin: 10px;
   padding: 10px;
-  border-radius: 10px;
   box-shadow: var(--box-shadow);
   text-align: initial !important;
   overflow: auto;
   margin: initial;
   padding: initial;
+  padding-bottom: 31px;
+}
+
+.post-form h3 {
+  margin: 30px 30px 10px 30px;
 }
 
 .post-form__content {
   display: flex;
-  gap: 50px;
+  gap: 11px;
   height: 100%;
-  width: 100%;
+  padding: 10px;
 }
 .post-form__form {
   display: flex;
@@ -23,19 +27,40 @@
   flex: 1;
   height: 100%;
   width: 30%;
+  align-items: flex-end;
 }
+
+.post-form__form button {
+  margin-top: 20px;
+}
+
 .post-form__form textarea {
-  /* width: 664px; */
   height: 100%;
   font-size: 16px;
   line-height: 1.4;
   padding: 10px;
+  box-sizing: border-box;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  padding: 7px;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  color: var(--color-secondary);
+  outline: none;
+  transition: all 0.5s;
 }
 
 .post-form__markdown {
   flex: 2;
   height: 100%;
-  width: 70%;
+  width: calc(70% - 120px);
   background-color: var(--color-primary);
   padding: 15px;
+}
+
+.post-form__form input {
+  margin-bottom: 10px;
 }

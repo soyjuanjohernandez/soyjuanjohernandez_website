@@ -6,7 +6,12 @@ import NavbarItem from "../navbarItem/NavbarItem";
 import changeColorLight from "./changeColorlight";
 
 const NavbarBlog = (props) => {
-  const { changeColor, openModalSignUp, openModalSignIn, logoutUser } = props;
+  const {
+    changeColor,
+    openModalSignIn,
+    logoutUser,
+    user,
+  } = props;
 
   useEffect(() => {
     let elementAtrib = document.documentElement.getAttribute("data-theme");
@@ -16,6 +21,11 @@ const NavbarBlog = (props) => {
       changeColorLight();
     }
   });
+
+  const colorToMain = () => {
+    const htmlElement = document.documentElement;
+      htmlElement.setAttribute("data-theme", "dark");
+  }
 
   const menuToggle = () => {
     let menuToggle = document.querySelector(".navbar-blog__menu");
@@ -28,7 +38,7 @@ const NavbarBlog = (props) => {
         <div
           className="navbar-blog__logo navbar-blog__item selected"
           title="Logotipo Soy Juanjo Hernández"
-          // onClick={}
+          onClick={colorToMain}
         >
           <img
             className="navbar-blog__logo-img"
@@ -57,22 +67,18 @@ const NavbarBlog = (props) => {
           />
         </NavHashLink>
 
-        <span className="navbar-blog-item__normal" onClick={openModalSignUp}>
-          Sign up
-        </span>
+        {!user && (
+          <span className="navbar-blog-item__normal" onClick={openModalSignIn}>
+            Sign In
+          </span>
+        )}
 
-        <span className="navbar-blog-item__normal" onClick={openModalSignIn}>
-          Sign In
-        </span>
-
-        <span className="navbar-blog-item__normal" onClick={logoutUser}>
-          Logout
-        </span>
-        {/* <button onClick={openModal}>mmodal</button> */}
-
-        {/* <a href="/#">Sign in</a>
-        <a href="/#">Logout</a> */}
-
+        {user && (
+          <span className="navbar-blog-item__normal" onClick={logoutUser}>
+            Logout
+          </span>
+        )}
+        
         <div className="navbar__button-theme" onClick={changeColor}>
           <img
             src={images.light}

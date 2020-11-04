@@ -26,8 +26,10 @@ const About = (props) => {
         <p>
           Hola! <br />
           <br />
-          Soy Juan José, desarrollador frontend, Tecnólogo en producción de
-          multimedia del SENA y estudiante activo en Platzi Master <span role="img" aria-label="emoji"> 👨‍💻</span>.
+          Soy desarrollador frontend, Tecnólogo en producción de multimedia del SENA y estudiante del programa Platzi Master en Platzi. <span role="img" aria-label="emoji"> 👨‍💻</span>.
+        </p>
+        <p>
+        Cuento con la capacidad de diseñar y crear todo lo relacionado con sitios y aplicaciones web. Implemento HTML, CSS, Javascript, React.js, firebase, webpack entre otros.  <span role="img" aria-label="emoji"> 🚀. </span>.
         </p>
         <p>
           Me gusta aprender algo nuevo constantemente, pienso que la creatividad
@@ -35,15 +37,15 @@ const About = (props) => {
           multicultural <span role="img" aria-label="emoji">  🎎</span>.
         </p>
         <p>
-          También me gusta la música en general, especialmente el rock , la
+          Me gusta la música en general, especialmente el rock , la
           música clásica y el jazz. Estudié música y suelo tocar la guitarra,
-          algunas veces clásica y otras la eléctrica <span role="img" aria-label="emoji"> 🤘</span>.
+          algunas veces guitarra clásica y otras la guitarra eléctrica <span role="img" aria-label="emoji"> 🤘</span>.
         </p>
-        <p>
+        {/* <p>
           Me apasiona y maravilla la capacidad que tiene el desarrollo de
-          software de cambiar el mundo y para llevar a la humanidad a nuevos
+          software de cambiar el mundo y  llevar a la humanidad a nuevos
           horizontes, como el planeta marte por ejemplo <span role="img" aria-label="emoji"> 👩‍🚀</span>.
-        </p>
+        </p> */}
         {children}
       </div>
       

@@ -4,7 +4,6 @@ import "./signin.css";
 import Modal from "../modal/modal";
 
 const SignInForm = (props) => {
-  // const { onClose, isOpen } = props;
   const { onCloseModal, isOpen, loginUser } = props;
 
   const initialStateValues = {
@@ -38,7 +37,6 @@ const SignInForm = (props) => {
           required
         />
         <br />
-
         <br />
         <input
           type="text"
@@ -50,7 +48,7 @@ const SignInForm = (props) => {
         />
         <br />
         <br />
-        <button>Save</button>
+        <button>Entrar</button>
       </form>
     </Modal>
   );

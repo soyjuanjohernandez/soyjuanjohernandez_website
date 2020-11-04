@@ -10,21 +10,20 @@
   padding-bottom: 40px;
   background-color: var(--color-primary-alt);
 }
-.post-detail p {
-  /* margin: initial;
-  padding: initial; */
-}
 
 .post-detail a {
   color: rgb(41, 197, 106);
 }
+
 .post-detail a:visited {
   color: rgb(0, 167, 69);
 }
+
 .post-detail pre {
   border-radius: 10px;
   box-shadow: var(--box-shadow);
 }
+
 .post-detail img {
   width: 100%;
 }
@@ -37,9 +36,11 @@
   left: 22px;
   transition: all 0.3s;
 }
+
 .post-detail__button-back-container:hover {
   opacity: 0.6;
 }
+
 .post-detail__button-back-container:active {
   opacity: 1;
 }
@@ -51,7 +52,9 @@
   color: transparent;
   outline: transparent;
   cursor: context-menu;
+  box-shadow: initial;
   width: 0;
+  padding: initial;
 }
 
 button.post-detail__button-back {
@@ -61,7 +64,7 @@ button.post-detail__button-back {
 }
 
 .post-detail__button-back img {
-  width: 40px;
+  width: 30px;
 }
 
 .post-form__markdown-detail {
@@ -69,13 +72,11 @@ button.post-detail__button-back {
   width: 70%;
   background-color: var(--color-primary);
   padding: 15px;
-  animation-name:fadeIn;
-  animation-duration:.5s
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 }
 
-
 table {
-  /* font-family: "Arial Black", Gadget, sans-serif; */
   border: 2px solid #111b27;
   background-color: var(--color-primary);
   width: 100%;
@@ -83,25 +84,25 @@ table {
   text-align: center;
   border-collapse: collapse;
 }
+
 table th {
-  /* border: 1px solid #4A4A4A; */
   padding: 20px 2px;
 }
+
 table td {
   border: 1px solid #4a4a4a;
   padding: 10px 2px;
 }
-table tbody td {
-  /* font-size: 13px; */
-  /* color: var(--color-primary-alt); */
-}
+
 table tr:nth-child(even) {
   background: var(--color-primary-alt);
 }
+
 table thead {
   background: #111b27;
   border-bottom: 3px solid #111b27;
 }
+
 table thead th {
   font-size: 15px;
   font-weight: bold;
@@ -109,6 +110,7 @@ table thead th {
   text-align: center;
   border-left: 2px solid #4a4a4a;
 }
+
 table thead th:first-child {
   border-left: none;
 }
@@ -120,6 +122,7 @@ table tfoot {
   background: #111b27;
   border-top: 1px solid #4a4a4a;
 }
+
 table tfoot td {
   font-size: 12px;
 }

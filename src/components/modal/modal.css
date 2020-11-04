@@ -1,14 +1,4 @@
-/* #modal {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(4, 34, 204, 0.678);
-} */
-
-.modal-sjh{
+.modal-sjh {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,7 +14,7 @@
 .modal__container {
   position: relative;
   top: 10rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-alt);
   border-radius: 5px;
   padding: var(--spacing-xs);
   box-shadow: var(--box-shadow);
@@ -35,8 +25,9 @@
   top: 0;
   right: 0;
   border: 0;
-  background-color: var(--color-primary-alt);
+  background-color: var(--color-primary);
   padding: 0.5rem 1rem;
+  color: var(--color-secondary);
 }
 .button:hover {
   cursor: pointer;

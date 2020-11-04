@@ -8,18 +8,14 @@ const Posts = (props) => {
 
   const getPosts = async () => {
     fs.collection("post").onSnapshot((querySnapshot) => {
-      // console.log("el snapshot", querySnapshot.docs);
       const docs = [];
       querySnapshot.forEach((doc) => {
         docs.push({ ...doc.data(), id: doc.id });
       });
-      console.log("el snapshot", docs);
       setPosts(docs);
 
     });
   };
-
-  console.log("el snapshot posts", posts);
 
   useEffect(() => {
     getPosts();

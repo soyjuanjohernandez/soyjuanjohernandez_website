@@ -3,7 +3,7 @@ import "./projects.css";
 import images from "../../assets/images/images";
 import ProjectCard from "../projectCard/ProjectCard";
 
-const Projects = (props) => {
+const Projects = () => {
   const { html, sass, react, web_components, webpack, js, css } = images;
 
   return (

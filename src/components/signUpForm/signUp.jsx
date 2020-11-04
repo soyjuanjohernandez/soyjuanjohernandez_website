@@ -37,7 +37,6 @@ const SignUpForm = (props) => {
           required
         />
         <br />
-
         <br />
         <input
           type="text"
