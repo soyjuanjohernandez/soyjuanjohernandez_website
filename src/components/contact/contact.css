@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   height: 380px;
+  padding-top: 50px;
 }
 
 .contact a {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./postDetail.css";
-import { fs } from "../../js/config/configFirebase";
+import images from "../../assets/images/images";
 
 import ReactMarkdown from "react-markdown";
 
@@ -9,11 +9,19 @@ import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const PostDetail = (props) => {
   const gfm = require("remark-gfm");
-  const { postDetailDataSend,handleClose } = props;
+  const { postDetailDataSend, handleClose } = props;
   const [postData, setpostData] = useState([]);
 
   useEffect(() => {
-    // getPosts();
+    // const htmlElement = document.documentElement;
+    // let elementAtrib = htmlElement.getAttribute("data-theme");
+    // if (elementAtrib === "dark") {
+    //   document.querySelector(".post-detail__button-back img").src =
+    //     images.arrow;
+    // } else {
+    //   document.querySelector(".post-detail__button-back img").src =
+    //     images.arrow_dark;
+    // }
   }, []);
   const Component = ({ value, language }) => {
     return (
@@ -25,13 +33,20 @@ const PostDetail = (props) => {
 
   return (
     <section className="post-detail">
-      <button onClick={handleClose}>X</button>
-      <input type="text" autoFocus disable />
-      <h1 autoFocus>{console.log(postDetailDataSend[0].postTitle)}</h1>
+      <input type="text" autoFocus className="post-detail__input-focus" />
+      <div className="post-detail__button-back-container" title="Ir atrás">
+        <button onClick={handleClose} className="post-detail__button-back">
+          <img
+            src={images.arrow}
+            alt="Atrás"
+            className="post-detail__button-back-arrow"
+          />
+        </button>
+      </div>
       <ReactMarkdown
         source={postDetailDataSend}
         plugins={[gfm]}
-        className="post-form__markdown"
+        className="post-form__markdown-detail"
         renderers={{ code: Component }}
       />
     </section>

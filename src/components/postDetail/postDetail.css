@@ -5,13 +5,121 @@
   align-items: center;
   justify-content: center;
   margin-top: 60px;
-  /* flex-wrap: wrap; */
-  /* height: 100vh; */
   margin: initial;
   padding: initial;
+  padding-bottom: 40px;
+  background-color: var(--color-primary-alt);
 }
 .post-detail p {
+  /* margin: initial;
+  padding: initial; */
+}
 
-  margin: initial;
-  padding: initial;
+.post-detail a {
+  color: rgb(41, 197, 106);
+}
+.post-detail a:visited {
+  color: rgb(0, 167, 69);
+}
+.post-detail pre {
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+.post-detail img {
+  width: 100%;
+}
+
+.post-detail__button-back-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 83px;
+  left: 22px;
+  transition: all 0.3s;
+}
+.post-detail__button-back-container:hover {
+  opacity: 0.6;
+}
+.post-detail__button-back-container:active {
+  opacity: 1;
+}
+
+.post-detail__input-focus {
+  background: transparent;
+  border: transparent;
+  caret-color: transparent;
+  color: transparent;
+  outline: transparent;
+  cursor: context-menu;
+  width: 0;
+}
+
+button.post-detail__button-back {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.post-detail__button-back img {
+  width: 40px;
+}
+
+.post-form__markdown-detail {
+  height: 100%;
+  width: 70%;
+  background-color: var(--color-primary);
+  padding: 15px;
+  animation-name:fadeIn;
+  animation-duration:.5s
+}
+
+
+table {
+  /* font-family: "Arial Black", Gadget, sans-serif; */
+  border: 2px solid #111b27;
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  border-collapse: collapse;
+}
+table th {
+  /* border: 1px solid #4A4A4A; */
+  padding: 20px 2px;
+}
+table td {
+  border: 1px solid #4a4a4a;
+  padding: 10px 2px;
+}
+table tbody td {
+  /* font-size: 13px; */
+  /* color: var(--color-primary-alt); */
+}
+table tr:nth-child(even) {
+  background: var(--color-primary-alt);
+}
+table thead {
+  background: #111b27;
+  border-bottom: 3px solid #111b27;
+}
+table thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #e6e6e6;
+  text-align: center;
+  border-left: 2px solid #4a4a4a;
+}
+table thead th:first-child {
+  border-left: none;
+}
+
+table tfoot {
+  font-size: 12px;
+  font-weight: bold;
+  color: #e6e6e6;
+  background: #111b27;
+  border-top: 1px solid #4a4a4a;
+}
+table tfoot td {
+  font-size: 12px;
 }

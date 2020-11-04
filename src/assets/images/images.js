@@ -1,4 +1,5 @@
 const images = {
+    arrow: require('./arrow.svg'),
     background_banner_dark: require('./background_banner_dark_theme.png'),
     background_banner_light: require( './background_banner_light_theme.png'),
     blog: require( './blog.svg'),

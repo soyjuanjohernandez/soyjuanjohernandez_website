@@ -34,8 +34,6 @@ const Posts = (props) => {
           key={post.id}
           onClick={() => showPost(post.id, post)}
         >
-          {/* <h3>{post.postTitle}</h3> */}
-          {/* <hr/> */}
           <img src={post.mainImage} alt={post.postTitle} />
           <p>{`${post.postDescription}`}</p>
         </div>
