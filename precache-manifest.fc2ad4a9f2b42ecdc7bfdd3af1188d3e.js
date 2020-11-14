@@ -1,75 +1,67 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3fcd23a02bcea96b1996f17734267fff",
+    "revision": "3151e5927f94abb50ec7a0a033d00877",
     "url": "/index.html"
   },
   {
-    "revision": "0d6dafcd15d491dc45c7",
-    "url": "/static/css/main.85328ad5.chunk.css"
+    "revision": "dab8e296020d8f2572f7",
+    "url": "/static/css/main.108c53ee.chunk.css"
   },
   {
-    "revision": "2fbfc539ef2fc60bd985",
-    "url": "/static/js/2.8da2ea9e.chunk.js"
+    "revision": "a13fc282782a37db2a82",
+    "url": "/static/js/2.af957e67.chunk.js"
   },
   {
-    "revision": "939c198347d6df3ce67379bd1a524c25",
-    "url": "/static/js/2.8da2ea9e.chunk.js.LICENSE.txt"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/static/js/2.af957e67.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0d6dafcd15d491dc45c7",
-    "url": "/static/js/main.6a1f63de.chunk.js"
+    "revision": "dab8e296020d8f2572f7",
+    "url": "/static/js/main.a05e6a0e.chunk.js"
   },
   {
     "revision": "df709ed65e685e4b0b9d",
     "url": "/static/js/runtime-main.7e8b8d26.js"
   },
   {
-    "revision": "0b0f19291565a0e0b22779b29bff841e",
-    "url": "/static/media/about_two_states.0b0f1929.svg"
+    "revision": "edd89897be6bfecda232c0171306e13e",
+    "url": "/static/media/about_two_states.edd89897.svg"
   },
   {
-    "revision": "79b8d53aa9e3eba4fbe618260d2fbc16",
-    "url": "/static/media/about_two_states_dark.79b8d53a.svg"
+    "revision": "c7a1bf3b196fd2fa80e9aa4bc8a187c1",
+    "url": "/static/media/about_two_states_dark.c7a1bf3b.svg"
   },
   {
     "revision": "bbd1c63efddd1065a7f9c627ed18daf6",
     "url": "/static/media/arrow.bbd1c63e.svg"
   },
   {
-    "revision": "803efac1695903bb4e550c681905b3c4",
-    "url": "/static/media/background_banner_dark_theme.803efac1.png"
-  },
-  {
-    "revision": "99ad391d6687ebba6cf929b7d088310b",
-    "url": "/static/media/background_banner_light_theme.99ad391d.png"
-  },
-  {
     "revision": "9e1b72c28279bf02de950320a2845d82",
     "url": "/static/media/blog.9e1b72c2.svg"
   },
   {
-    "revision": "531f659b857935575b930214cae8a06c",
-    "url": "/static/media/blog_two_states.531f659b.svg"
+    "revision": "d2429b6d5f712b6ffd3a7a0a2dd6acd8",
+    "url": "/static/media/blog_two_states.d2429b6d.svg"
   },
   {
-    "revision": "20dfb3f27207dad3a0bd66adcabaa90f",
-    "url": "/static/media/blog_two_states_dark.20dfb3f2.svg"
+    "revision": "c66ebee95e569074604580cfa6631289",
+    "url": "/static/media/blog_two_states_dark.c66ebee9.svg"
   },
   {
-    "revision": "93a4b04cb14415a4417fdd12ec1c8b3c",
-    "url": "/static/media/brand.93a4b04c.svg"
+    "revision": "1c5243c7bdceff5fa94879a7db47accb",
+    "url": "/static/media/brand.1c5243c7.svg"
   },
   {
-    "revision": "ccbb480599b06342177e7f0f2f4a9527",
-    "url": "/static/media/brand_dark.ccbb4805.svg"
+    "revision": "3da16ef50bfeb55da0e8d8ef974fd6ca",
+    "url": "/static/media/brand_dark.3da16ef5.svg"
   },
   {
-    "revision": "774b38082b97a4dc67dc91e9a760c4df",
-    "url": "/static/media/contact_two_states.774b3808.svg"
+    "revision": "c8f41f35a54d537c8b8d0675a1d8ea5b",
+    "url": "/static/media/contact_two_states.c8f41f35.svg"
   },
   {
-    "revision": "81b1e083dbe7bfce89c22edb658f57e4",
-    "url": "/static/media/contact_two_states_dark.81b1e083.svg"
+    "revision": "afcf8e2ff1565868d8dbbd5c98d1e347",
+    "url": "/static/media/contact_two_states_dark.afcf8e2f.svg"
   },
   {
     "revision": "13f9b9f09974a5c78218997508ee0067",
@@ -104,10 +96,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/instagram_white.a915d21a.svg"
   },
   {
-    "revision": "372ff18e26f3ad63814ee6b213fa9134",
-    "url": "/static/media/jh_face.372ff18e.png"
-  },
-  {
     "revision": "3cf36d26ae5e6332a6a75fa02794770f",
     "url": "/static/media/js.3cf36d26.svg"
   },
@@ -122,10 +110,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6678813cb282cc4f05e0cd3a086713f3",
     "url": "/static/media/linkedin_white.6678813c.svg"
-  },
-  {
-    "revision": "c7a266870fd3176aefdad64d7529d9d5",
-    "url": "/static/media/logo_banner_color.c7a26687.svg"
   },
   {
     "revision": "53448ff6e30313cf1ff1cd2efe6483bb",
@@ -152,12 +136,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/menu_white.d2c0763d.svg"
   },
   {
-    "revision": "2ba8362bca89a0acd79bb97fa8bbff30",
-    "url": "/static/media/nav_logo_color.2ba8362b.svg"
+    "revision": "258b2756df6605aa6075c8ea3a34cb8c",
+    "url": "/static/media/nav_logo_color.258b2756.svg"
   },
   {
-    "revision": "1bd038462ad4e449c69e572760eef366",
-    "url": "/static/media/nav_logo_color_negative.1bd03846.svg"
+    "revision": "4c5f649b0ed588db684aeb54541bd1be",
+    "url": "/static/media/nav_logo_color_negative.4c5f649b.svg"
   },
   {
     "revision": "8aad67a36cfbb99d3e995aadba57e92e",
@@ -168,12 +152,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/product_card.bc90d068.png"
   },
   {
-    "revision": "ed10708ac27e2b4c084fbe4a336dd770",
-    "url": "/static/media/projects_two_states.ed10708a.svg"
+    "revision": "1b75d4ab3f5ae84cc344e375a0a83724",
+    "url": "/static/media/projects_two_states.1b75d4ab.svg"
   },
   {
-    "revision": "d7abca5cb43e24c9cc0124369f18b7ef",
-    "url": "/static/media/projects_two_states_dark.d7abca5c.svg"
+    "revision": "ecbb655fdbe9d9e9b10a98fe6208d93d",
+    "url": "/static/media/projects_two_states_dark.ecbb655f.svg"
   },
   {
     "revision": "17530d37eab9b63a70c1780d944a3369",
@@ -192,12 +176,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sass.2f1e06c1.svg"
   },
   {
-    "revision": "21ef040d54962c71b114a3a9edfd16dd",
-    "url": "/static/media/sobre_mi.21ef040d.svg"
+    "revision": "8e5b6c7c9840fd29d772cd96a7f7434f",
+    "url": "/static/media/sobre_mi.8e5b6c7c.svg"
   },
   {
-    "revision": "110af15758cc074eb52d4218d2a15b05",
-    "url": "/static/media/sobre_mi_dark.110af157.svg"
+    "revision": "0dc744a03dde238dc511cfbf569c7819",
+    "url": "/static/media/sobre_mi_dark.0dc744a0.svg"
   },
   {
     "revision": "91adcb48d6e3d266342ea0783626687a",
